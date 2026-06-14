@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-book Vida Saudável e Exercícios</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f7faf8;
+    color:#1d1d1d;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    background:#2ecc71;
+    color:#fff;
+    padding:16px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    background:#27ae60;
+}
+
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    color:#fff;
+}
+
+.hero-content{
+    max-width:700px;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.badge{
+    display:inline-block;
+    background:#2ecc71;
+    padding:8px 18px;
+    border-radius:30px;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:2.5rem;
+    color:#1b5e20;
+}
+
+.section-title p{
+    color:#666;
+    margin-top:10px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#1b5e20;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:25px;
+}
+
+.about-text h2{
+    color:#1b5e20;
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.benefits{
+    background:#ffffff;
+}
+
+.benefit-item{
+    text-align:center;
+    padding:25px;
+}
+
+.benefit-item span{
+    font-size:3rem;
+}
+
+.testimonials{
+    background:#f0f7f2;
+}
+
+.testimonial{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.stars{
+    color:#f1c40f;
+    margin-bottom:10px;
+}
+
+.price{
+    background:linear-gradient(135deg,#1b5e20,#2ecc71);
+    color:#fff;
+    text-align:center;
+}
+
+.price-box{
+    max-width:700px;
+    margin:auto;
+}
+
+.old-price{
+    text-decoration:line-through;
+    opacity:.7;
+    font-size:1.3rem;
+}
+
+.new-price{
+    font-size:4rem;
+    font-weight:800;
+    margin:10px 0;
+}
+
+.countdown{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin:30px 0;
+}
+
+.time{
+    background:rgba(255,255,255,.15);
+    padding:15px;
+    border-radius:15px;
+    min-width:80px;
+}
+
+.time h3{
+    font-size:2rem;
+}
+
+footer{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.3rem;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+
+.new-price{
+    font-size:3rem;
+}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+
+<div class="badge">
+📘 E-book Completo de Vida Saudável
+</div>
+
+<h1>
+Transforme Seu Corpo e Sua Saúde de Forma Inteligente
+</h1>
+
+<p>
+Descubra os hábitos, exercícios e estratégias que ajudam milhares de pessoas a conquistar mais energia, melhorar a saúde e manter um físico saudável sem dietas malucas ou métodos extremos.
+</p>
+
+<a href="#comprar" class="btn">
+QUERO MEU E-BOOK AGORA
+</a>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<div class="section-title">
+<h2>O Que Você Vai Aprender</h2>
+<p>Conteúdo completo para sua transformação física e mental.</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>🥗 Alimentação Saudável</h3>
+<p>Aprenda princípios simples para melhorar sua alimentação e obter resultados duradouros.</p>
+</div>
+
+<div class="card">
+<h3>💪 Exercícios Eficientes</h3>
+<p>Conheça exercícios que ajudam no fortalecimento muscular e condicionamento físico.</p>
+</div>
+
+<div class="card">
+<h3>🔥 Controle de Peso</h3>
+<p>Estratégias para melhorar sua composição corporal de forma sustentável.</p>
+</div>
+
+<div class="card">
+<h3>😴 Sono e Recuperação</h3>
+<p>Descubra como o descanso influencia diretamente seus resultados.</p>
+</div>
+
+<div class="card">
+<h3>🧠 Saúde Mental</h3>
+<p>Hábitos que promovem bem-estar, foco e equilíbrio emocional.</p>
+</div>
+
+<div class="card">
+<h3>📅 Planejamento Semanal</h3>
+<p>Monte uma rotina prática para alcançar seus objetivos.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section benefits">
+<div class="container">
+
+<div class="section-title">
+<h2>Benefícios do E-book</h2>
+</div>
+
+<div class="grid">
+
+<div class="benefit-item">
+<span>⚡</span>
+<h3>Mais Energia</h3>
+</div>
+
+<div class="benefit-item">
+<span>🏋️</span>
+<h3>Melhor Condicionamento</h3>
+</div>
+
+<div class="benefit-item">
+<span>❤️</span>
+<h3>Mais Saúde</h3>
+</div>
+
+<div class="benefit-item">
+<span>🎯</span>
+<h3>Hábitos Sustentáveis</h3>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=80">
+
+<div class="about-text">
+<h2>Por Que Este E-book é Diferente?</h2>
+
+<p>
+Ao contrário de materiais superficiais encontrados na internet, este guia foi desenvolvido para apresentar uma visão completa sobre saúde, exercícios físicos, alimentação equilibrada, recuperação muscular e construção de hábitos duradouros.
+</p>
+
+<br>
+
+<p>
+Tudo explicado de forma simples, objetiva e prática para que qualquer pessoa possa aplicar imediatamente no dia a dia.
+</p>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section testimonials">
+<div class="container">
+
+<div class="section-title">
+<h2>O Que os Leitores Dizem</h2>
+</div>
+
+<div class="grid">
+
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"Leitura fácil e extremamente útil. Consegui organizar minha rotina de exercícios."</p>
+<strong>Marcos A.</strong>
+</div>
+
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"Excelente para quem quer começar uma vida mais saudável sem complicação."</p>
+<strong>Fernanda R.</strong>
+</div>
+
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"Muito conteúdo prático. Valeu cada centavo."</p>
+<strong>Lucas M.</strong>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="comprar" class="section price">
+
+<div class="container">
+
+<div class="price-box">
+
+<h2>Oferta Especial de Lançamento</h2>
+
+<br>
+
+<p class="old-price">De R$ 97,00</p>
+
+<div class="new-price">
+R$ 19,90
+</div>
+
+<p>
+Pagamento único • Acesso imediato
+</p>
+
+<div class="countdown">
+
+<div class="time">
+<h3 id="hours">23</h3>
+<p>Horas</p>
+</div>
+
+<div class="time">
+<h3 id="minutes">59</h3>
+<p>Min</p>
+</div>
+
+<div class="time">
+<h3 id="seconds">59</h3>
+<p>Seg</p>
+</div>
+
+</div>
+
+<br>
+
+<a href="#" class="btn">
+COMPRAR AGORA
+</a>
+
+<br><br>
+
+<p>
+🔒 Compra Segura • 📱 Acesso Instantâneo • 💳 Pagamento Protegido
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>
+© 2026 • Todos os direitos reservados
+</p>
+</footer>
+
+<script>
+
+let total = 86400;
+
+function timer(){
+
+let hours = Math.floor(total / 3600);
+let minutes = Math.floor((total % 3600) / 60);
+let seconds = total % 60;
+
+document.getElementById('hours').innerText = hours;
+document.getElementById('minutes').innerText = minutes;
+document.getElementById('seconds').innerText = seconds;
+
+if(total > 0){
+total--;
+}
+
+}
+
+setInterval(timer,1000);
+
+</script>
+
+</body>
+</html>
